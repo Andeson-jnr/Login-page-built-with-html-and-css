@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: lightgrey;
+      }
+      form {
+        background-color: lightblue;
+        width: 30vw;
+        height: 41vw;
+        border-radius: 10px;
+        padding: 70px;
+        margin-left: 550px;
+      }
+      input { 
+        margin: 30px;
+        border-radius: 5px;
+        text-shadow: 7px;
+        padding: 7px;
+        color: green;
+      }
+      h4 {
+        text-align: center;
+        font-size: larger;
+        margin-right: 60px;
+        font-style: italic;
+      }
+      label {
+        margin-left: 50px;
+    
+      }
+       a{
+        text-decoration: none;
+        color: green;
+      }
+      #psw a {
+        margin-left: 60px;
+        color: red;
+      }
+      @media only screen and (max-width: 600px) {
+        * {
+          box-sizing: border-box;
+        }
+        body {
+          margin: 0;
+          padding: 0;
+          background-color: lightgrey;
+        }
+        form {
+          background-color: lightblue;
+          width: 80vw;
+          height: 120vw;
+          border-radius: 10px;
+          margin-left: 45px;
+          padding: 42px;
+          color: green;
+        }
+        input {
+          margin-right: 15px;
+          border-radius: 5px;
+          text-shadow: 7px;
+          border: none;
+          padding: 10px;
+          color: green;
+          cursor: pointer;
+        }
+        h4 {
+          text-align: center;
+          font-size: larger;
+          margin-right: 60px;
+          font-style: italic;
+        }
+        label {
+          margin-left: 50px;
+        }
+        a {
+          text-decoration: none;
+          color: green;
+        }
+        #psw a {
+          margin-left: 60px;
+          color: red;
+        }
+        input:hover{
+            border-color: green;
+        }
+      }
+    </style>
+    <h4>TEDDY</h4>
+    <form action="" method="get">
+      <label for="Username">Username</label><br />
+      <input
+        type="text"
+        name="username"
+        placeholder="Username or email"
+        required
+      /><br />
+      <label for="password">Password</label><br />
+      <input
+        type="password"
+        placeholder="Password"
+        name="pw"
+        maxlength="8"
+        minlength="4"
+        required
+      /><br />
+      <input type="submit" value="Login" /><span
+        ><a href="#">Create new Account</a></span
+      ><br />
+      <span id="psw"><a href="#">Forgot Password</a></span>
+    </form>
+  </body>
+</html>
